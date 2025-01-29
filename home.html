@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Maan Hage Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- navication section --> 
+        <nav>
+            <div class="nav-container">
+                <div class="logo-section">
+                    <img src="pictures/sample_logo.jpeg" alt="Maan Hage Books Logo" class="logo">
+                    <span class="site-name">Maan Hage Books</span>
+                </div>
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    <!-- Home Section -->
+    <main id="home">
+        <h1>Welcome to Maan Hage Books</h1>
+        <p>
+            Explore a world of knowledge and imagination with our collection of books. 
+            Whether you're seeking to learn, inspire, or escape into a new story, we have something for everyone.
+        </p>
+
+        <div class="cta-buttons">
+            <a href="about.html">Learn More About Us</a>
+            <a href="contact.html">Get In Touch</a>
+        </div>
+    </main>
+
+    <main>
+        <section id="book-list" class="book-list">
+            <!-- JavaScript will dynamically generate the books here -->
+        </section>
+    </main>
+    
+    <!-- About Section -->
+    <main id="about">
+        <h1>About Us</h1>
+        <p>
+            Welcome to Maan Hage Books, your one-stop destination for educational, inspirational, and entertaining books. 
+            Our mission is to bring knowledge and creativity to life for readers around the world.
+        </p>
+
+        <div class="about-content">
+            <img src="pictures/libraray.png" alt="About Maan Hage Books">
+            <div class="about-text">
+                <h2>Who We Are</h2>
+                <ul>
+                    <li>Dedicated to providing high-quality books to readers of all ages.</li>
+                    <li>Offering free and paid PDFs for learning and entertainment.</li>
+                    <li>Committed to fostering a love for reading and knowledge.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Vision Section -->
+    <main id="vision">
+        <h1>Our Vision</h1>
+        <p>
+            At <strong>Maan Hage Books</strong>, our vision is to create a world where knowledge is accessible to everyone, 
+            fostering a culture of lifelong learning and intellectual growth.
+        </p>
+
+        <section class="vision-points">
+            <div class="vision-point">
+                <h3>Empowering Learners</h3>
+                <p>
+                    We envision a future where individuals from all backgrounds can access the tools they need to succeed.
+                </p>
+            </div>
+            <div class="vision-point">
+                <h3>Innovative Solutions</h3>
+                <p>
+                    Continuously adopting cutting-edge technology to deliver high-quality learning materials.
+                </p>
+            </div>
+            <div class="vision-point">
+                <h3>Global Reach</h3>
+                <p>
+                    Expanding our impact to reach communities worldwide and bridge educational gaps.
+                </p>
+            </div>
+            <div class="vision-point">
+                <h3>Environmental Sustainability</h3>
+                <p>
+                    Promoting eco-friendly practices by offering digital resources to reduce environmental impact.
+                </p>
+            </div>
+        </section>
+
+        <p class="highlight">"Shaping the future through knowledge, innovation, and accessibility."</p>
+        <a href="contact.html">Get in Touch</a>
+    </main>
+    <!-- Mission Section -->
+    <main id="mission">
+        <h1>Our Mission</h1>
+        <p>
+            At <strong>Maan Hage Books</strong>, our mission is to provide accessible and affordable learning resources to everyone, 
+            empowering individuals through knowledge and education.
+        </p>
+        <ul>
+            <li><span>Accessibility:</span> We strive to make books and learning materials available to all communities.</li>
+            <li><span>Quality:</span> Offering premium educational resources, both paid and free, without compromising quality.</li>
+            <li><span>Impact:</span> Supporting lifelong learning and development by making knowledge easily attainable.</li>
+        </ul>
+        <p class="highlight">"Empowering generations through knowledge, one book at a time."</p>
+        <a href="contact.html">Contact Us</a>
+    </main>
+     <!-- Contact Section -->
+     <main id="contact">
+        <h1>Contact Us</h1>
+        <p>
+            Have any questions or inquiries? Reach out to us using the form below, and we'll get back to you as soon as possible.
+        </p>
+
+        <form class="contact-form" action="submit_contact.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-details">
+            <p>You can also reach us at:</p>
+            <p>Email: <a href="mailto:support@maanhagebooks.com">support@maanhagebooks.com</a></p>
+            <p>Phone: +252 618094142</p>
+        </div>
+    </main>
+
+    <script >
+        const books = [
+       { 
+           title: "Book 1", 
+           description: "BUUGA: The 5am Club.", 
+           pdfLink: "https://drive.google.com/file/d/1_9eSxOpy1auz54kq4XxOKvaS4wOiQ5G2/view?usp=drive_link", 
+           price: 10, 
+           image: "pictures/download (7).jpeg"  // Book cover image
+       },
+       { 
+           title: "Book 2", 
+           description: "BUUGA: The Power Of Subconscious Mind.", 
+           pdfLink: "https://drive.google.com/file/d/1rFErqkQgEoA4Rd6jp1pxsHi17my1PfMD/view?usp=drive_link", 
+           price: 0, 
+           image: "pictures/download.jpeg"  // Book cover image
+       },
+       { 
+           title: "Book 3", 
+           description: "BUUGA: JIDKII JANNADA.", 
+           pdfLink: "https://drive.google.com/file/d/1UwlD1VRVUCWxLZ7duI1rZ8nOaadcmx6I/view?usp=drive_link",
+           price: 2.99, 
+           image: "pictures/jidkii jannada.jpg"   // Book cover image
+       },
+       { 
+           title: "Book 4", 
+           description: "BUUGA: Wanaagyada Diinka Islaamka.", 
+           pdfLink: "https://drive.google.com/file/d/1KMSP-r8VSDGj34tHjNZ3-_9zt7HiA-jT/view?usp=drive_link",
+           price: 0, 
+           image: "pictures/Wanaagyada Diinka Islaamka.jpg"   // Book cover image
+       },
+       { 
+           title: "Book 5", 
+           description: "BUUGA: Dhambaalda Quraanka.", 
+           pdfLink: "https://drive.google.com/file/d/1D4O4qD72daGYeInNY3nq92QiTZ2bwDZr/view?usp=drive_link",
+           price: 0, 
+           image: "pictures/dhambaalda quraanka .jpg"   // Book cover image
+       },
+       { 
+           title: "Book 6", 
+           description: "BUUGA: ku caawi naftada akhrinta qur aanka.", 
+           pdfLink: "https://drive.google.com/file/d/1vMvF2q0JdrDZrwWIO6mBvzVf7QcIiTY3/view?usp=drive_link",
+           price: 2.99, 
+           image: "pictures/ku caawi naftada akhrinta qur aanka.jpg"   // Book cover image
+       },
+       { 
+           title: "Book 7", 
+           description: "BUUGA: xuquuqda haweenta muslim ka ah.", 
+           pdfLink: "https://drive.google.com/file/d/1C_R8qpvbtJq1h_nrb0i02PdXjfEIGymG/view?usp=drive_link",
+           price: 0, 
+           image: "pictures/xuquuqda haweenta muslim ka ah.jpg"   // Book cover image
+       },
+       { 
+           title: "Book 8", 
+           description: "BUUGA: inanateydiyeey.", 
+           pdfLink: "https://drive.google.com/file/d/1zhbODdePt5N20Jv2tFtFiRU_Q5EMR3Yf/view?usp=drive_link",
+           price: 3.5, 
+           image: "pictures/inanateydiyeey.jpg"   // Book cover image
+       },
+       { 
+           title: "Book 9", 
+           description: "BUUGA: fataawada soonka.", 
+           pdfLink: "https://drive.google.com/file/d/1ejsuzSzOd9ZUpzeYytS6NGKgXVIcYHZy/view?usp=drive_link",
+           price: 4, 
+           image: "pictures/fataawada soonka.jpg"   // Book cover image
+       },
+   
+       { 
+           title: "Book 10", 
+           description: "BUUGA: qisooyinka nabiyada.", 
+           pdfLink: "https://drive.google.com/file/d/1JiA0RheYYM4kPnsta2QqO6KuUoTo5PkS/view?usp=drive_link",
+           price: 0, 
+           image: "pictures/qisooyinka nabiyada..jpg"   // Book cover image
+       },
+       { 
+           title: "Book 11", 
+           description: "BUUGA: Tafsiirka Quraanka kariimka.", 
+           pdfLink: "https://drive.google.com/file/d/13IavkWys4zEKmpdOdH2GLeIMjmOAHMll/view?usp=drive_link",
+           price: 4.5, 
+           image: "pictures/tafsiirka qur aanka.jpg"   // Book cover image
+       },
+       { 
+           title: "Book 12", 
+           description: "الانهيار_كيف_تحقق_المجتمعات", 
+           pdfLink: "https://drive.google.com/file/d/1dS1MJqwSFddY5vfz-xmh2HTzML3pYYxv/view?usp=drive_link",
+           price: 0, 
+           image: "pictures/al anhiyaar.jpg"   // Book cover image
+       },
+       { 
+           title: "Book 13", 
+           description: "BUUGA: Xisnul muslim.", 
+           pdfLink: "https://drive.google.com/file/d/1uiGnDHsaN4JnbM0TmSZpOYOU8VDEpW6Y/view?usp=drive_link",
+           price: 0, 
+           image: "pictures/Xisnul muslim.jpg"   // Book cover image
+       },
+       { 
+           title: "Book 14", 
+           description: "BUUGA: Tarbiyaynta nafta.", 
+           pdfLink: "https://drive.google.com/file/d/1BtuB-XfGUD4ZgEvPvAsAvQdsViAYViIC/view?usp=drive_link",
+           price: 1, 
+           image: "pictures/tarbiyeynta nafta.jpg"   // Book cover image
+       },
+       { 
+           title: "Book 15", 
+           description: "BUUGA: Salaad baa i dhaaftay.", 
+           pdfLink: "https://drive.google.com/file/d/1BtuB-XfGUD4ZgEvPvAsAvQdsViAYViIC/view?usp=drive_link",
+           price: 0, 
+           image: "pictures/Salaad baa i dhaaftay.jpg"   // Book cover image
+       },
+   ];
+   
+   window.onload = function () {
+       const bookListDiv = document.getElementById("book-list");
+       
+       books.forEach(book => {
+           const bookItem = document.createElement("div");
+           bookItem.classList.add("book-item");
+   
+           // Conditionally render the button (Buy Now or Download PDF)
+           const actionButton = book.price === 0
+               ? `<a href="${book.pdfLink}" target="_blank" class="btn download-btn">Download PDF</a>`
+               : `<button class="btn buy-btn" onclick="purchaseBook('${book.title}', ${book.price})">Buy Now</button>`;
+   
+           // Populate the book details
+           bookItem.innerHTML = `
+               <img src="${book.image}" alt="${book.title} cover" class="book-cover">
+               <h3>${book.title}</h3>
+               <p>${book.description}</p>
+               <p>Price: ${book.price === 0 ? "Free" : `$${book.price}`}</p>
+               ${actionButton}
+           `;
+   
+           bookListDiv.appendChild(bookItem);
+       });
+   };
+   
+   // Function to handle Buy Now button
+   function purchaseBook(bookTitle, price) {
+       alert(`You have selected "${bookTitle}" for $${price}. Proceeding to checkout!`);
+       // Redirect to payment page or perform any other purchase logic here
+   }
+   
+   
+   
+       </script>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Maan Hage Books. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

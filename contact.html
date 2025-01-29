@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Maan Hage Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navication Section -->
+        <nav>
+            <div class="nav-container">
+                <div class="logo-section">
+                    <img src="pictures/sample_logo.jpeg" alt="Maan Hage Books Logo" class="logo">
+                    <span class="site-name">Maan Hage Books</span>
+                </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+
+    <!-- Contact Section -->
+    <main id="contact">
+        <h1>Contact Us</h1>
+        <p>
+            Have any questions or inquiries? Reach out to us using the form below, and we'll get back to you as soon as possible.
+        </p>
+
+        <form class="contact-form" action="submit_contact.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-details">
+            <p>You can also reach us at:</p>
+            <p>Email: <a href="mailto:support@maanhagebooks.com">support@maanhagebooks.com</a></p>
+            <p>Phone: +252 618094142</p>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Maan Hage Books. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
